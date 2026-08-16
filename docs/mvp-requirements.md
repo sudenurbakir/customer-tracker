@@ -2,8 +2,8 @@
 
 **Proje Adı:** customer-tracker  
 **Versiyon:** 1.0 (MVP)  
-**Hazırlayan:** İş Analisti bakış açısıyla  
-**Tarih:** 2025
+**Hazırlayan:** Sudenur Bakır  
+**Tarih:** 16.08.2026
 
 ---
 
