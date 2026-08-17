@@ -3,19 +3,17 @@
 **Proje:** customer-tracker  
 **Versiyon:** 1.0 (MVP)
 
-> Bu dokümandaki diyagram GitHub’da otomatik olarak render edilir.
-
 ---
 
 ## Varlık İlişki Diyagramı
 
 ```mermaid
 erDiagram
-    CUSTOMER ||--o{ PROJECT : "has"
-    PROJECT ||--o{ CONTRACT : "has"
-    PROJECT ||--o{ INVOICE : "has"
-    PROJECT ||--o{ NOTE : "has"
-    INVOICE ||--o{ PAYMENT : "has"
+    CUSTOMER ||--o{ PROJECT : has
+    PROJECT ||--o{ CONTRACT : has
+    PROJECT ||--o{ INVOICE : has
+    PROJECT ||--o{ NOTE : has
+    INVOICE ||--o{ PAYMENT : has
 
     CUSTOMER {
         uuid id PK
@@ -82,14 +80,3 @@ erDiagram
         text content
         datetime created_at
     }
-
-
-## İlişki Açıklamaları
-
-| İlişki                    | Kartinalite | Açıklama                                      |
-|---------------------------|-------------|-----------------------------------------------|
-| CUSTOMER → PROJECT        | 1 : N       | Bir müşterinin birden fazla projesi olabilir |
-| PROJECT → CONTRACT        | 1 : N       | Bir projenin birden fazla sözleşmesi olabilir|
-| PROJECT → INVOICE         | 1 : N       | Bir projenin birden fazla faturası olabilir  |
-| PROJECT → NOTE            | 1 : N       | Bir projenin birden fazla notu olabilir      |
-| INVOICE → PAYMENT         | 1 : N       | Bir faturanın birden fazla ödemesi olabilir  |
